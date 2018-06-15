@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>picture</title>
+	<style type="text/css">
+		header {
+			background: url('./img/header.png') no-repeat center;
+			height: 200px;
+		}
+		html {
+			font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+			background-color: gray;
+		}
+		
+		body {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			background-color: white;
+		}
+
+		section {
+      		padding: 20px;
+      	}
+
+      	img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+      	}
+	</style>
+</head>
+<body>
+	<header></header>
+
+	<main>
+		<section>
+			<picture>
+				<source media="(max-width: 1300px)" srcset="./img/redd-angelo-1200w.jpg">
+				<source media="(max-width: 850px)" srcset="./img/redd-angelo-800w.jpg">
+				<img src="./img/redd-angelo-600w.jpg">
+			</picture>
+		</section>
+	</main>
+</body>
+</html>

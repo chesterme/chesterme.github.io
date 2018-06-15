@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>为表格中的列提供共同的样式</title>
+	<style type="text/css">
+		html {
+	      font-family: sans-serif;
+	    }
+	    table {
+	      border-collapse: collapse;
+	      border: 2px solid rgb(200,200,200);
+	      letter-spacing: 1px;
+	      font-size: 0.8rem;
+	    }
+	    td, th {
+	      border: 1px solid rgb(190,190,190);
+	      padding: 10px 20px;
+	    }
+	    td {
+	      text-align: center;
+	    }
+	    caption {
+	      padding: 10px;
+	    }
+	</style>
+</head>
+<body>
+	<h1>把第二列的背景色设置为黄色</h1>
+	<table>
+		<caption>data</caption>
+	  <tr>
+	    <th>Data 1</th>
+	    <th style="background-color: yellow">Data 2</th>
+	  </tr>
+	  <tr>
+	    <td>Calcutta</td>
+	    <td style="background-color: yellow">Orange</td>
+	  </tr>
+	  <tr>
+	    <td>Robots</td>
+	    <td style="background-color: yellow">Jazz</td>
+	  </tr>		
+	</table>
+	
+	<hr>
+	
+	<p>
+		需要为每一列中的元素添加颜色设置，太没有效率了。借助colgroup和col标签，可以为整列添加样式。
+	</p>
+
+	<table>
+		<caption>data2</caption>
+		<colgroup>
+	    	<col>
+	    	<col style="background-color:yellow">
+	  	</colgroup>
+	  <tr>
+	    <th>Data 1</th>
+	    <th>Data 2</th>
+	  </tr>
+	  <tr>
+	    <td>Calcutta</td>
+	    <td>Orange</td>
+	  </tr>
+	  <tr>
+	    <td>Robots</td>
+	    <td>Jazz</td>
+	  </tr>
+	</table>
+
+</body>
+</html>

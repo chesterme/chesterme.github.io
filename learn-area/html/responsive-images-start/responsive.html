@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hummingbird</title>
+	<style type="text/css">
+		header {
+			background: url('./img/header.png') no-repeat center;
+			height: 200px;
+		}
+		html {
+			font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+			background-color: gray;
+		}
+		
+		body {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			background-color: white;
+		}
+
+		section {
+      		padding: 20px;
+      	}
+
+      	img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+      	}
+	</style>
+</head>
+<body>
+	<header></header>
+
+	<main class="main">
+		<section class="section">
+			<h1>Hummingbird Introduction</h1>
+			<p>
+				<b>Hummingbirds</b> are birds from the Americas that constitute the family Trochilidae. They are among the smallest of birds, most species measuring 7.5–13 cm (3–5 in) in length. Indeed, the smallest extant bird species is a hummingbird, the 5 cm (2.0 in) bee hummingbird weighing less than 2.0 g (0.07 oz).
+			</p>
+			<img srcset="./img/Hummingbird-320w.png 320w,
+			./img/Hummingbird-480w.png 480w,
+			./img/Hummingbird-800w.png 800w"
+				 sizes="(max-width: 320px) 280px,
+				 		(max-width: 480px) 440px,
+				 		800px" 
+				 src="./img/Hummingbird-800w.png">
+			<p>
+				They are known as hummingbirds because of the humming sound created by their beating wings which flap at high frequencies audible to humans. They hover in mid-air at rapid wing-flapping rates, which vary from around 12 beats per second in the largest species, to in excess of 80 in some of the smallest. Of those species that have been measured in wind tunnels, their top speed exceeds 15 m/s (54 km/h; 34 mph) and some species can dive at speeds in excess of 22 m/s (79 km/h; 49 mph).
+			</p>
+
+			<picture>
+				<source media="(max-width: 799px)" srcset="./img/blue-chinned-480w.png">
+				<source media="(min-width:800px" srcset="./img/blue-chinned-800w.png">
+				<img src="./img/blue-chinned-320w.png" alt="blue-chinned sapphire">
+			</picture>
+
+			<p>
+				Hummingbirds have the highest metabolism of any homeothermic animal.[3] To conserve energy when food is scarce, and nightly when not foraging, they can go into torpor, a state similar to hibernation, slowing metabolic rate to 1/15th of its normal rate.
+			</p>
+			
+		</section>
+	</main>
+</body>
+</html>

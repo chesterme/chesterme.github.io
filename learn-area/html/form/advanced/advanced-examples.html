@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>advanced example</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<h2>数字组件</h2>
+		<p>
+			将input元素中type属性设置为number，并设置范围和每一步改变的大小，就可以在数字组件中改变输入值的大小。
+		</p>
+		<label for="age">Enter your age:</label>
+		<input type="number" name="age" id="age" min="1" max="10" step="2">
+
+		<h2>滑块</h2>
+		<label for="beans">How many beans can you eat?</label>
+		<input type="range" name="beans" id="beans" min="0" max="500" step="10">
+		<span class="beancount"></span>
+
+		<h2>输入本地时间</h2>
+		<label for="datetime">Enter local date:</label>
+		<input type="datetime-local" name="datetime" id="datetime">
+		
+		<h2>输入月</h2>
+		<label for="month"></label>
+		<input type="month" name="month" id="month">
+
+		<h2>输入时间</h2>
+		<label for="time"></label>
+		<input type="time" name="time" id="time">
+
+		<h2>星期</h2>
+		<label for="week"></label>
+		<input type="week" name="week" id="week">
+
+		<h2>
+			通过min和max属性控制日期和时间
+		</h2>
+		<label for="myDate">
+			When are you available this summer?
+		</label>
+		<input type="date" name="myDate" id="myDate" min="2018-01-01" max="2018-03-23">
+
+		<h2>
+			插入颜色选择器
+		</h2>
+		<label for="myColor"></label>
+		<input type="color" name="myColor" id="myColor">
+	</form>
+	<script type="text/javascript">
+		var beans = document.querySelector('#beans');
+		var count = document.querySelector('.beancount');
+
+		count.textContent = beans.value;
+
+		beans.oninput = function() {
+		  count.textContent = beans.value;
+		}
+	</script>
+</body>
+</html>

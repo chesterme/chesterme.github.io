@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>使用fieldset元素创建item group</title>
+</head>
+<body>
+	<h2>将功能类似的输入框放置在一个fieldset元素中</h2>
+	<p>
+		fieldset元素可以组织一组有相同目的的输入框，比如，一组单选框，能够得到一个比较好的布局。
+	</p>
+	<p>
+		同样它也可以用来对表单进行分段，理想情况下，长表单应该在多个页面之间进行拆分，如果表单很长，又必须在单页上完成展示，那么在不同的fieldset中放置不同的相关部分可以提供可用性。
+	</p>
+	<form>
+		<fieldset>
+			<legend>Fruit juice size</legend>
+			<p>
+				<input type="radio" name="size" id="size_1" value="small">
+				<label for="size_1">Small</label>
+			</p>
+			<p>
+				<input type="radio" name="size" id="size_2" value="medium">
+				<label for="size_2">Medium</label>
+			</p>
+			<p>
+				<input type="radio" name="size" id="size_3" value="large">
+				<label for="size_3">Large</label>
+			</p>
+		</fieldset>
+	</form>
+
+	<hr>
+	
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>下拉内容</title>
+</head>
+<body>
+	<h2>选择框</h2>
+	<fieldset>
+		<legend>select your favourite fruits</legend>
+		<label for="simple">
+			<span>favourite fruits:</span>
+		</label>
+		<select id="simple" name="simple">
+			<option>Banana</option>
+			<option>Cherry</option>
+			<option>Lemon</option>
+		</select>
+	</fieldset>
+
+	<hr>
+	
+	<h2>使用optgroup属性组织选项</h2>
+	<select id="groups" name="groups">
+		<optgroup label="fruits">
+			<option>Banana</option>
+			<option selected>Cherry</option>
+			<option>Lemon</option>
+		</optgroup>
+		<optgroup label="vegetables">
+			<option>Carrot</option>
+			<option>Eggplant</option>
+			<option>Potato</option>
+		</optgroup>
+	</select>
+
+	<hr>
+
+	<h2>多选框</h2>
+	<select multiple id="multi" name="multi">
+		<optgroup label="furits">
+			<option>Banana</option>
+			<option>Cherry</option>
+			<option>Lemon</option>
+		</optgroup>
+	</select>
+
+	<hr>
+
+	<h2>自动补全输入框</h2>
+	<p>
+		使用datalist元素为输入框生成提示值，当光标点击输入框时，就会出现输入提示。在input元素中使用list属性绑定datalist，就能达到输入提示的效果。
+	</p>
+	<p>
+		<label for="myFruit">
+			<span>What's your favorite fruit?</span>
+		</label>
+		<input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+		<datalist id="mySuggestion">
+		  <option>Apple</option>
+		  <option>Banana</option>
+		  <option>Blackberry</option>
+		  <option>Blueberry</option>
+		  <option>Lemon</option>
+		  <option>Lychee</option>
+		  <option>Peach</option>
+		  <option>Pear</option>
+		</datalist>
+	</p>
+
+	<hr>
+
+	<h2>数据列表支持和后背</h2>
+	<p>
+		有时候浏览器不支持datalist元素，这时可以在datalist元素中嵌入一个选择框，达到不全效果。
+	</p>
+	<label for="myFruit2">
+		<span>What is your favourite fruit?(With fallback)</span>
+	</label>
+	<input type="text" name="myFruit2" id="myFruit2" list="fruitList2">
+	<datalist id="fruitList2">
+		<label for="mySuggestion2">or pick a fruit</label>
+		<select id="mySuggestion2" name="altFruit">
+		  <option>Apple</option>
+		  <option>Banana</option>
+		  <option>Blackberry</option>
+		  <option>Blueberry</option>
+		  <option>Lemon</option>
+		  <option>Lychee</option>
+		  <option>Peach</option>
+		  <option>Pear</option>
+		</select>
+	</datalist>
+</body>
+</html>

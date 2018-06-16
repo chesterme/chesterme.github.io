@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>可选框</title>
+</head>
+<body>
+	<h2>单选框和复选框</h2>
+	<dl>
+		<dt>单选框</dt>
+		<dd>
+			在input元素中设置type属性为checkbox，就可以实现单选选择的功能。为了好看，可以将多个选择放入一个列表，然后将整个列表放入一个fieldset中，这样就可以将页面中不同内容的选项分割开。
+		</dd>
+	</dl>
+	<dl>
+		<dt>多选框</dt>
+		<dd>
+			在input元素中设置type为radio，就可以实现多个选择。
+		</dd>
+	</dl>
+	<form method="post" action="#">
+		<fieldset>
+			<legend>Choose all the vegetable you like to eat</legend>
+			<ul>
+				<li>
+					<label for="carrots">Carrots</label>
+					<input type="checkbox" name="carrots" checked id="carrots" value="carrots">
+				</li>
+				<li>
+					<label for="peas">Peas</label>
+					<input type="checkbox" name="peas" id="peas" value="peas">
+				</li>
+				<li>
+					<label for="cabbage">Cabbage</label>
+					<input type="checkbox" name="cabbage" id="cabbage" value="cabage">
+				</li>
+				<li>
+					<label for="broc">Broccoli</label>
+					<input type="checkbox" name="broc" id="broc" value="broc">
+				</li>
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<legend>What is your favourite meal?</legend>
+			<ul>
+				<li>
+					<label for="soup">Soup</label>
+					<input type="radio" name="meal" id="soup" value="soup">
+				</li>
+				<li>
+					<label for="curry">Curry</label>
+					<input type="radio" name="meal" id="curry" value="curry">
+				</li>
+				<li>
+					<label for="tacos">Tacos</label>
+					<input type="radio" name="meal" value="tacos" id="tacos">
+				</li>
+				<li>
+					<label for="bolognaise">Bolognaise</label>
+					<input type="radio" name="meal" id="bolognaise" value="bolognaise">
+				</li>
+			</ul>
+		</fieldset>
+		<p>
+			<button type="submit">submit</button>
+		</p>
+	</form>
+</body>
+</html>

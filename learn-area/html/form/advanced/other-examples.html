@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>other advance example</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<h2>文件选择器</h2>
+		<label for="file">选择文件</label>
+		<input type="file" name="file" id="file" accept="image/*" multiple>
+
+		<h2>隐藏内容</h2>
+		<label for="timestamp">timestamp</label>
+		<input type="hidden" name="timestamp" id="timestamp" value="1234567">
+
+		<h2>进度条</h2>
+		<progress value="52" max="100"></progress>
+
+		<h2>仪表</h2>
+		<meter min="0" max="100" value="75" low="33" high="66" optimun="50">75</meter>
+
+		<h2>图像按钮</h2>
+		<label for="click">send:</label>
+		<input type="image" alt="Click me!" src="./img/my-img.png" width="80" height="30">
+	</form>
+</body>
+</html>

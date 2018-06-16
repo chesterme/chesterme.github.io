@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>活用标签</title>
+</head>
+<body>
+	<h2>label元素与input元素通过for属性和id属性进行关联</h2>
+	<form>
+		<fieldset>
+			<legend>Input user info</legend>
+			<!-- label元素与input元素通过for属性和id属性进行关联 -->
+			<label for="name">
+				Name : <input type="text" name="user_name" id="name">
+			</label>
+			<label for="email">
+				E-mail: <input type="email" name="user_name" id="emial">
+			</label>
+			<div class="button">
+				<button type="submit">Send your message</button>
+				<button type="reset">reset your message</button>
+			</div>
+		</fieldset>
+	</form>
+
+	<hr>
+	
+	<h2>可以通过设置label元素，达到点击标签，响应单选框的效果</h2>
+	<form>
+		<p>
+			<label for="taste_1">I like cherry</label>
+			<input type="checkbox" name="taste_cherry" id="taste_1">
+		</p>
+		<p>
+			<label for="taste_2">I like banana</label>
+			<input type="checkbox" name="taste_banana" value="2" id="taste_2">
+		</p>
+	</form>
+</body>
+</html>

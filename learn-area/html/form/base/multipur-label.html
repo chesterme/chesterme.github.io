@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>多个标签</title>
+</head>
+<body>
+	<p>
+		不应该在一个小组件中放置多个标签，因为一些辅助技术可能很难处理他们。在多标签的情况下，应该将这个组件嵌套在一个label元素中。
+	</p>
+
+	<p>Required fields are followed by <abbr title="required">*</abbr>.</p>
+
+	<!-- So this: -->
+	<div>
+		<label for="username">Name:</label>
+		<input type="text" name="username">
+		<label for="username"><abbr title="required">*</abbr></label>
+	</div>
+
+	<!-- would be better done like this: -->
+	<div>
+		<label for="username">
+			<span>Name:</span>
+			<input type="text" name="username" id="username">
+			<abbr title="required">*</abbr>
+		</label>
+	</div>
+
+	<!-- But this is probably best: -->
+	<div>
+		<label for="username">
+			Name: <abbr title="required">*</abbr>
+		</label>
+		<input type="text" name="usernmae" id="username">
+	</div>
+</body>
+</html>

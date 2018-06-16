@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Favourite fruit start</title>
+	<style type="text/css">
+		input:invalid{
+			border: 2px dashed red;
+		}
+
+		input:valid{
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="post">
+		<h2>使用request属性</h2>
+		<label for="choose">
+			Would you prefer a banana or a cherry?
+		</label>
+		<input id="choose" name="i_like" required>
+		<button style="submit">submit</button>
+	</form>
+
+	<form action="#" method="post">
+		<h2>使用正则表达式验证</h2>
+		<label for="choose2">Would your prefer a banana or a cherry?</label>
+		<input id="choose2" name="i_like" required pattern="banana|cherry">
+		<button type="submit">submit</button>
+	</form>
+
+	<form action="#" method="post">
+		<h2>强制输入框的长度</h2>
+		<div>
+			<label for="choose3">Would your prefer a banana or a cherry?</label>
+			<input id="choose3" name="i_like" required minlength="6" maxlength="6">
+		</div>
+		<div>
+			<label for="number">How many would you like?</label>
+			<input type="number" id="number" name="amount" value="1" min="1" max="10">
+		</div>
+		<button type="submit">submit</button>
+	</form>
+</body>
+</html>

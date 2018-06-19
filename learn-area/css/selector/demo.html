@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Selector Basics</title>
+	<style type="text/css">
+		body {
+			background-color: rgb(50, 122, 167);
+			padding: 0 20px 20px 20px; /* 内容到元素边缘的空白 */
+			margin: 0; /* 清除正文四周的空白 */
+		}
+		/* 设置所有段落的颜色，字号，字体类型 */
+		p {
+			color: rgba(255, 255, 255, .6);
+			font-size: 1em;
+			font-family: "Varela Round", Arial, Helvetica, sans-serif;
+		}
+		/* 为1级，2级，3级标题设置样式 */
+		h1, h2, h3 {
+			color: rgb(255, 255, 255);
+			font-family: Arial, "Palatino Linotype", Times, serif;
+			border-bottom: 2px solid rgb(89, 185, 178); /* 在标题下添加一条边线 */
+			padding-top: 10px; /* 设置内容到元素的上边缘的空白为10px */
+			padding-bottom: 5px; /* 设置内容到元素的下边缘的空白为5px */
+		}
+
+		h1 {
+			font-size: 2em;
+		}
+
+		/* 为网站的logo设置样式 */
+		#logo {
+			font-family: Baskerville, Palatino, sans-serif;
+			font-size: 2em;
+			color: rgba(255, 255, 255, .8);
+			font-style: italic;
+			text-align: center; /*对齐方式 */
+			margin-bottom: 30px;
+			background-color: rgb(191, 91, 116);
+			border-radius: 0 0 10px 10px;
+			padding: 10px;
+		}
+		/* 突出显示包含额外信息的段落 */
+		.note {
+			color: black;
+			border: 2px solid white; /* 边框，白色实线，大小为2px */
+			background-color: rgb(69, 189, 102);
+			margin-top: 25px; /* 元素边缘顶部添加25px的空白 */
+			margin-bottom: 35px; /* 元素边缘底部添加35px的空白 */
+			padding: 20px; /* 段落内容到元素边缘之间有20px的空白 */
+		}
+		/* 为提醒框中的strong标签设置样式 */
+		.note strong {
+			color: #FC6512;
+		}
+
+		/* 设置文章内容的大小， 并居中显示 */
+		article {
+			max-width: 760px;
+			margin: 0 auto; /* 清除上下外边距，左右外边距由浏览器自己计算 */
+		}
+
+		/* 为紧邻1级标题的段落设置样式 */
+		h1+p {
+			color: rgb(255, 255, 255);
+			font-size: 1.2em;
+			line-height: 140%;
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<div id="logo">
+		  CSS: The Missing Manual
+		</div>
+		<h1>The Amazing World of CSS</h1>
+
+		<p>
+			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+		</p>
+
+		<p>
+			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+		</p>
+
+		<p class="note">
+			<strong>NOTE:</strong> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+		</p>
+
+		<h2>Who Knew CSS Had Such Power?</h2>
+
+		<p>
+			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+		</p>
+
+		<p class="note">
+			<strong>NOTE:</strong> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+		</p>
+
+		<h3>Not Me!</h3>
+
+		<p>
+			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+		</p>
+
+		<h3>Me Neither!</h3>
+
+		<p>
+			Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+		</p>
+	</article>
+</body>
+</html>

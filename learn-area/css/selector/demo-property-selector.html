@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>使用属性选择器</title>
+    <style type="text/css">
+      /* 为带有title属性的链接清除字体格式 */
+      a[title]{
+        text-decoration: none;
+      }
+      /* 为title属性为home的链接应用样式 */
+      a[title = "home"]{
+        color: #7739cc;
+        font-size: 2em;
+      }
+      /* 为外部链接应用样式 */
+      a[href^="http://"]{
+        color:red;
+      }
+      /* 为以.pdf结尾的链接应用样式 */
+      a[href$=".pdf"]{
+        background: url(./images/bg_page.png) no-repeat;
+        /* padding-left: 15px; */
+      }
+      /* 为包含google的链接应用样式 */
+      a[href*="google"]{
+        font-size: 2em;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <p class="intro">
+      A paragraph of <strong>important</strong> text.
+      A paragraph of <strong>important</strong> text.
+      A paragraph of <strong>important</strong> text.
+      A paragraph of <strong>important</strong> text.
+      A paragraph of <strong>important</strong> text.
+    </p>
+    <ul>
+      <li><a href="http://www.baidu.com">baidu</a></li>
+      <li><a href="./demo.html">demo</a></li>
+      <li><a href="./demo.pdf">demo.pdf</a></li>
+      <li><a href="https://translate.google.cn">translate</a></li>
+    </ul>
+    <hr>
+    <ul class="navigation">
+      <nav>
+        <li><a href="#" title="home">Home</a></li>
+        <li><a href="#" title="about">About</a></li>
+        <li><a href="#" title="contract">Contract</a></li>
+      </nav>
+    </ul>
+    <form>
+  		<fieldset>
+  			<legend>Fruit juice size</legend>
+  			<p>
+  				<input type="radio" name="size" id="size_1" value="small">
+  				<label for="size_1">Small</label>
+  			</p>
+  			<p>
+  				<input type="radio" name="size" id="size_2" value="medium">
+  				<label for="size_2">Medium</label>
+  			</p>
+  			<p>
+  				<input type="radio" name="size" id="size_3" value="large">
+  				<label for="size_3">Large</label>
+  			</p>
+  		</fieldset>
+      <fieldset>
+        <legend>Input your message.</legend>
+        <label for="name">Name: </lable>
+        <input type="text" name="name" id="name">
+      </fieldset>
+  	</form>
+  </body>
+</html>

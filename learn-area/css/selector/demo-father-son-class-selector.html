@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>使用子代类型选择器</title>
+    <style type="text/css">
+      /* 为p元素是侧栏中第一个子节点添加样式 */
+      .sidebar p:first-of-type{
+          color: green;
+      }
+      /* 为p元素是侧栏中最后一个子节点添加样式*/
+      .sidebar p:last-of-type{
+        color: red;
+      }
+      /* 对文章中的图片按奇偶顺序进行左右对齐 */
+      article img:nth-of-type(odd){
+        float: left;
+      }
+      article img:nth-of-type(even){
+        float:right;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>The Amazing World of CSS</h1>
+  		<p>
+  			Sed ut perspiciatis unde <img src="./images/animate01-100w.jpg">omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.	Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <img src="./images/animate02-100w.jpg">totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur <img src="./images/animate03-100w.jpg">aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam <img src="./images/animate04-100w.jpg"> aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+  		</p>
+    </article>
+    <aside class="sidebar">
+      <p>some website</p>
+      <nav>
+        <ul>
+          <li><a href="http://www.baidu.com"><em>baidu</em></a></li>
+          <li><a href="./demo.html">demo</a></li>
+          <li><a href="./demo.pdf">demo.pdf</a></li>
+          <li><a href="https://translate.google.cn">translate</a></li>
+        </ul>
+      </nav>
+      <p>sidebar end</p>
+    </aside>
+  </body>
+</html>

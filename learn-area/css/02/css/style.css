@@ -1,0 +1,53 @@
+/* 为整个html页面应用样式 */
+html {
+	padding-top: 25px; /* 为标签的顶部与标签的内容之间设置25px的空白 */
+	background-image: url('images/bg_page.png'); /* 将网页的背景设置为一张图片 */
+}
+
+/* 应用于body元素 */
+body {
+	width: 80%; /* 边框大小为浏览器窗口的80% */
+	padding: 20px; /* 边框内容与边框之间有20px的空白 */
+	margin: 0 auto; /* 边框居中 */
+	border-radius: 10px; /* 创建边框 */
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, .5); /* 为边框添加半透明的黑色阴影 */
+	background-color: #E1EDEB; /* 边框背景色 */
+}
+
+h1 {
+	font-family: 'Varela Round', 'Arial Black', serif;
+	font-weight: normal;
+	color: #6A94CC;  /* 设置字体颜色 */
+	font-size: 3em;  /* 设置字号 */
+	margin: 0; /* 删除标题四周的空白 */
+}
+
+/* 把定义中的样式应用到p和address元素中 */
+p, address{
+	font-family: 'Palatino Linotype', Baskerville, serif;
+	font-size: 1.25em;
+	color: #616161;
+	line-height: 150%;
+	margin-top: 10px; /* 段落顶部到段落内容之间有10px的空白 */
+	margin-left: 60px; /* 段落左边到段落内容之间有60px的空白 */
+}
+
+h2 {
+	color: #B1967C;
+	font-family: 'Varela Round', 'Arial Black', serif;
+	font-weight: normal;
+	font-size: 2.2em;
+	border-bottom: 2px white solid; /* 在标题下方画一条实线 */
+	background: url('./images/head-icon.png') no-repeat 10px 10px;
+	padding: 0 0 2px 60px;
+	margin: 0;
+}
+
+/* 为具有intro类属性的元素应用样式 */
+.intro {
+	color: #666666;
+	font-family: 'Varela Round', 'Arial Black', serif;
+	font-size: 1.2em;
+	margin-left: 0; /* 内容到左边缘之间没有空白 */
+	margin-bottom: 25px; /* 内容到下边缘之间有25px的空白 */
+}

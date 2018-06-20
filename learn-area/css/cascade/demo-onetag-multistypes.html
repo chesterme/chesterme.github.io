@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>一个标签，多个样式</title>
+    <style>
+      a {
+        color: #6378df !important; /* 该属性不会被权重高的覆盖 */
+      }
+      p a {
+        font-weight: bold;
+      }
+      .byline a {
+        text-decoration: none;
+      }
+      #email {
+        color: blue;
+      }
+      .highlight {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="./css/demo.css">
+  </head>
+  <body>
+    <p>
+      如果一个元素有多个样式，并且它们之间没有冲突，那么浏览器会合并这些样式里的属性。
+      如果有样式冲突，比较选择器的权重，选择权重最大的样式。
+      当同时使用内部样式表和外部样式表时，可以会发生选择器权重一致的情况，此时，选择最后出现的样式。
+    </p>
+    <p class="byline">Written by <a id="email" class="highlight" href="mailto@jean@cosmofarmer.com">Jean Graine de Pomme</a></p>
+  </body>
+</html>

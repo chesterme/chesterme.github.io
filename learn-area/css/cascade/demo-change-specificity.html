@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>控制层叠</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <style>
+      #sidebar p {
+        font-family: Verdana;
+        font-size: .9em;
+      }
+      /* 上一个样式的权重比它高，所有没有选择该样式 */
+      .intro {
+        font-family: sans-serif;
+        font-size: 1.25em;
+      }
+      #sidebar .intro {
+        font-family: Georgia;
+        font-size: 1.25em;
+      }
+      /* h1{
+        font-size: 36px;
+        color: red;
+      } */
+    </style>
+  </head>
+  <body class="home">
+    <aside id="sidebar">
+      <h1>Sidebar</h1>
+      <p class="intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</p>
+      <p>adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    </aside>
+  </body>
+</html>

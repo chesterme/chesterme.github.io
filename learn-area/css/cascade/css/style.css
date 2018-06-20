@@ -1,0 +1,11 @@
+/* 设置整个页面的1级标题 */
+h1 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.home h1{
+  font-size: 36px;
+  color: red;
+}

@@ -1,0 +1,60 @@
+.main {
+	float: left;
+	width: 70%;
+}
+.sidebar {
+	margin-left: 75%;
+	padding: 15px;
+	background: #E9F5FE;
+}
+
+/* 为页面设置默认样式 */
+body {
+  color: #254adb;
+  font-family: "Palatino Linotype", Baskerville, serif;
+  padding-top: 115px;
+  background: #5ee6e9 url("../images/bg_body.png") repeat-x;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 为页面中所有的1级标题设置默认的样式 */
+h1 {
+  font-size: 3em;
+  font-family: "Arial Black", Arial, sans-serif;
+  margin-bottom: 15px; /* 添加15px大小的底外边距 */
+}
+
+/* 为页面中所有的2级标题添加默认的样式 */
+h2 {
+  font-size: 2em;
+  color: #081938;
+  margin-bottom: 5px;
+}
+
+/* 为主要内容栏中的2级标题添加样式 */
+.main h2 {
+  color: #004adb;
+  border-bottom: 2px white solid;
+  background: url(../images/bullet_flower.png) no-repeat;
+  padding: 0 0 2px 80px;
+}
+
+/* 为主要内容栏中的段落设置样式 */
+.main p{
+  color: black;
+  font-family: "Palatino Linotype", Baskerville, serif;
+  font-size: 1.1em;
+  line-height: 150%;
+  margin-bottom: 10px;
+  margin-left: 80px;
+}
+
+/* 为介绍信息设置样式 */
+p.intro {
+  color: #2a042e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  margin-left: 0;
+  margin-bottom: 15px;
+}

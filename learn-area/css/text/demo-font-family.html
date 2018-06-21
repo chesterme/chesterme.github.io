@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>使用字体</title>
+  <!-- 清除浏览器默认的样式 -->
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./fonts/junction.css" rel="stylesheet">
+  <style>
+    /* 衬线字体，显示段落 */
+    .main p {
+      font-family: "Times New Roman", Times, serif;
+    }
+    /* 无衬线字体显示标题 */
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    /*等宽字体，显示计算机代码*/
+    code {
+      font-family: "Courier New", Courier, monospace;
+    }
+    /* 使用web字体 */
+    /* @font-face {
+      font-family: 'junctionbold';
+      src: url('./fonts/junction-bold-webfont.woff2') format('woff2'),
+           url('./fonts/junction-bold-webfont.woff') format('woff');
+      font-weight: normal; /* 不要加粗显示，使用字体本身的字重 */
+      font-style: normal;
+    } */
+    .sidebar {
+      font-family: "Junction", Arial, sans-serif;
+    }
+    p.intro {
+      font-family: "Junction";
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS: The Missing Manual</h1>
+  <div class="main">
+    <p class="intro">Sed ut <em>perspiciatis</em> unde <strong>omnis</strong> iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+    <h2>Lorem Ipsum Dolor Sat</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <h2>Nisi Ut Aliquid </h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p>图灵机是英国数学家阿兰•图灵提出的一种抽象计算模型，本书深入剖析了图灵这篇描述图灵机和可计算性的原始论文《论可计算数及其在判定性问题上的应用》。书中在详解论文的同时，也附带了大量的历史背景资料、图灵的个人经历，以及图灵机对于人们理解计算机、人类意识和宇宙所产生的影响。 本书适合所有计算机科学专业的学生、程序员或其他技术人员，同时也适合欲了解图灵生平及其构建图灵机的思维的读者阅读。</p>
+    </div>
+  <code>
+    /* 衬线字体，显示段落 */
+    .main p {
+      font-family: "Times New Roman", Times, serif;
+    }
+    /* 无衬线字体显示标题 */
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </code>
+  <div class="sidebar">
+    <h2>Sidebar</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</p>
+    <p>adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p>图灵机是英国数学家阿兰•图灵提出的一种抽象计算模型，本书深入剖析了图灵这篇描述图灵机和可计算性的原始论文《论可计算数及其在判定性问题上的应用》。书中在详解论文的同时，也附带了大量的历史背景资料、图灵的个人经历，以及图灵机对于人们理解计算机、人类意识和宇宙所产生的影响。 本书适合所有计算机科学专业的学生、程序员或其他技术人员，同时也适合欲了解图灵生平及其构建图灵机的思维的读者阅读。</p>
+  </div>
+</body>
+</html>

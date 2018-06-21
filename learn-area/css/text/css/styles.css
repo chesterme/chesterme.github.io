@@ -1,0 +1,141 @@
+/* 引入外部字体 */
+@font-face {
+	font-family: "PTSans"; /* 为外部字体定义名称 */
+	src: url("./fonts/PTSansRegular.woff2").format('wof2'), /* 外部字体的路径，以及格式 */
+			 url('./fonts/PTSansRegular.worff').format('wof');
+	font-weight: normal; /* 字体没有包含斜体和粗体版本 */
+	font-style: normal;
+}
+@font-face {
+	font-family: "PTSans";
+	src: url("./fonts/PTSansItalic.woff2").format("woff2"),
+			 url("./fonts/PTSansItalic.woff").format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: "PTSans";
+	src: url("./fonts/PTSansBlod.woff2").format("woff2"),
+		   url("./fonts/PTSansBold.woff").format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PTSans";
+	src: url("./fonts/PTSansBoldItalic.woff2").format("woff2"),
+			 url("./fonts/PTSansBoldItalic.woff").format("woff");
+	font-weight: bold;
+	font-style: italic;
+}
+/* end 引入外部字体 */
+
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol {
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset browser styles */
+
+/* 为页面设置基准样式，该样式属性会被它的所有后代继承 */
+html {
+	font-family: PTSans, Arial, sans-serif;
+	font-size: 62.5%; /* 16 * 62.5% = 10，以10px为基准便于计算其他文本在屏幕上显示的大小 */
+	/* 添加背景色和背景图，并控制背景图的位置 */
+	background: rgb(225, 238, 253) url("../images/bg_body.png") repeat-x;
+}
+/* end设置基准样式 */
+
+/* 装饰主要内容的标题,段落,列表 */
+.main {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 0 10px;
+	border: 4px solid white;
+	background: transparent url("../images/bg_banner.jpg") no-repeat;
+}
+.main h1{
+	color: rgb(249, 212, 120);
+	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+	font-size: 4em;
+	/* 为文本添加投影， 向右偏移4px， 向下偏移4px， 在6px长的范围内逐渐淡出，使用rgba颜色， 把投影设置透明度为75%的黑色*/
+	text-shadow: 4px 4px 6px rgba(0, 0, 0, .75);
+}
+.main h2 {
+	font: normal 3.5em "Slabo 27px", Garamond, Times, serif;
+	color: rgb(37, 76, 143);
+	border-bottom: 1px solid rgb(200, 200, 200);
+	margin-top: 25px;
+}
+.main h3{
+	color: rgb(241, 47, 6);
+	font-size: 1.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+.main p{
+	font-size: 1.8em;
+	line-height: 1.5;
+	margin-left: 150px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+}
+.main p::first-line{
+	font-weight: bold;
+	color: rgb(153, 153, 153);
+}
+.main ul {
+	margin: 50px 0 25px 50px; /* 对应上，右，下，左外边距 */
+	width: 25%; /* 设置列表为窗口大小的25% */
+	float: right; /* 将列表移到页面的右侧，而且列表后面的内容围绕在列表的左侧 */
+}
+.main li {
+	color: rgb(32, 126, 191);
+	font-size: 1.5em;
+	margin-bottom: 7px;
+}
+/* end 装饰主要内容的标题，段落，列表 */
+/* 突出显示主要内容的某个段落 */
+.main .byline {
+	font-size: 1.6em;
+	margin: 5px 0 25px 50px;
+}
+.main .byline strong {
+	color: rgb(32, 126, 191);
+	text-transform: uppercase;
+	margin-left: 11px;
+}
+/* end 突出显示主要内容的某个段落 */
+/* 润色 */
+.main h1 strong {
+	font-size: 136px;
+	color: white;
+	line-height: 1; /* 行高为150px */
+	margin-right: -.5em; /* 强调部分整体向右移动 150 * 0.5px */
+}
+/* end 润色 */

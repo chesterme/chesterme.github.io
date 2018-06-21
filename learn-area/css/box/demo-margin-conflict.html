@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>外边距冲突</title>
+	<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .highlight {
+      border: 2px solid #071325;
+      padding: 10px;
+      background-color: #638fd2;
+      margin: 10px;
+    }
+    .highlight+h3{
+      border: 2px solid #071325;
+      padding: 10px;
+      background-color: #638fd2;
+      margin: 20px 10px;
+    }
+    .byline {
+      border: 2px solid #071325;
+      padding: 10px;
+      background-color: #638fd2;
+      margin: 10px;
+    }
+    .list {
+      border: 2px solid #071325;
+      padding: 20px;
+      background-color: #638fd2;
+      margin: 20px 10px;
+      list-style-type: none;
+    }
+    .list p{
+      border: 2px solid #282f39;
+      margin: 10px;
+    }
+    .alert {
+      border: 2px solid #071325;
+      padding: 20px;
+      background-color: #638fd2;
+      margin: 20px 10px;
+      list-style-type: none;
+    }
+    .alert p{
+      border: 2px solid #282f39;
+      margin: 30px;
+    }
+  </style>
+</head>
+
+<body>
+	<div class="main">
+		<h1><strong>CSS</strong> The Missing Manual</h1>
+		<h2>Exploring Typographic Possibilities</h2>
+		<p class="byline">november 30 <strong>Rod Dibble</strong></p>
+		<ul class="list">
+      <p>This is a paragraph.</p>
+			<li>Lorem Ipsum</li>
+			<li>Reprehenderit qui in ea</li>
+			<li>Lorem Ipsum</li>
+			<li>Reprehenderit qui in ea</li>
+			<li>Lorem Ipsum</li>
+			<li>Reprehenderit qui in ea</li>
+		</ul>
+		<h3>Esse quam nulla</h3>
+		<p class="highlight">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <em>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</em> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+		<h3>Quis autem vel eum</h3>
+		<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <strong>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </strong>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	</div>
+  <div class="alert">
+    <p>This is a paragraph.</p>
+  </div>
+  <aside>
+    <h2>小记</h2>
+    <p>当两个纵向的外边距相遇时，web浏览器会选取较大的那个，而较小那个会被折叠。
+      如果想获得增加两个元素纵向的距离，可以通过设置内边距来达到叠加的效果</P>
+  </aside>
+</body>
+</html>

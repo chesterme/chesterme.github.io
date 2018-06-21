@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>理解盒子模型</title>
+	<style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      max-width: 720px;
+    }
+    .main .highlight {
+      border: 2px solid #020f23;
+      background-color: #5c8cd4;
+      padding: 10px;
+      margin: 20px;
+    }
+    .main .highlight+h3{
+      border: 2px solid #020f23;
+      background-color: #5c8cd4;
+      padding: 10px;
+      margin: 30px 20px;
+    }
+    .photos {
+      border: 2px solid #020f23;
+      /* padding: 10px; */
+      padding: 10%;
+      /* margin: 20px; */
+      margin: 10%;
+    }
+    .photos td {
+      border: 2px solid #020f23;
+      background-color: #1664db;
+      padding: 10px;
+      /* padding: 10%; */
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+	<div class="main">
+		<h1><strong>CSS</strong> The Missing Manual</h1>
+		<h2>Exploring Typographic Possibilities</h2>
+		<p class="byline">november 30 <strong>Rod Dibble</strong></p>
+		<ul>
+			<li>Lorem Ipsum</li>
+			<li>Reprehenderit qui in ea</li>
+			<li>Lorem Ipsum</li>
+			<li>Reprehenderit qui in ea</li>
+			<li>Lorem Ipsum</li>
+			<li>Reprehenderit qui in ea</li>
+		</ul>
+		<h3>Esse quam nulla</h3>
+		<p class="highlight">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <em>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</em> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+		<h3>Quis autem vel eum</h3>
+		<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <strong>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </strong>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+    <table class="photos">
+      <tr>
+        <td><img src="./images/animate01-400w.jpg"/></td>
+        <td><img src="./images/animate02-400w.jpg"/></td>
+      </tr>
+      <tr>
+        <td><img src="./images/animate03-400w.jpg"/></td>
+        <td><img src="./images/animate04-400w.jpg"/></td>
+      </tr>
+    </table>
+	</div>
+  <aside>
+    <h2>小记</h2>
+    <p>css把html中的每一个元素都放进一个盒子里面，就像相框一样，元素内容就是相片，
+      border就是边框，背景颜色就是往边框以内的地方填充，padding就是相片到边框的空白，
+      margin就是边框之外的空白，用来分割相邻元素。</P>
+  </aside>
+</body>
+</html>

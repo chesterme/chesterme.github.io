@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>行内、块级和其他显示方式</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html {
+        font-size: 10px;
+      }
+      main p {
+        font: 3em/1.5 Arial, Helvetica, sans-serif;
+      }
+      .shadow1 p {
+        border: 2px solid #0b2023;
+        background-color: #3a7f88;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px; /* 圆角半径 */
+        box-shadow: 4px 6px 8px rgba(0, 0, 0, .75);
+      }
+      .shadow2 p {
+        border: 2px solid #0b2023;
+        background-color: #3a7f88;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px; /* 圆角半径 */
+        box-shadow: 4px 6px 8px 2px rgba(0, 0, 0, .75);
+      }
+      .shadow3 p {
+        border: 2px solid #0b2023;
+        background-color: #3a7f88;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px; /* 圆角半径 */
+        box-shadow: -4px -6px 8px 2px rgba(0, 0, 0, .5), 8px 6px 12px rgba(0, 0, 0, .5);
+        /* box-shadow 0 0 0 10px rgb(0, 33, 255); */
+      }
+      .shadow4 p {
+        border: 2px solid #0b2023;
+        background-color: #3a7f88;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px; /* 圆角半径 */
+        box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, .75);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="shadow1">
+        <p>box-shadow:4px 6px 8px rgba(0, 0, 0, .75)</p>
+      </div>
+      <div class="shadow2">
+        <p>box-shadow:0 0 8px 2px rgba(0, 0, 0, .75)</p>
+      </div>
+      <div class="shadow3">
+        <p>box-shadow:-4px -6px 8px 2px rgba(0, 0, 0, .5), 8px 6px 12px rgba(0, 0, 0, .5)</p>
+      </div>
+      <div class="shadow4">
+        <p>box-shadow:inset 0 0 8px 2px rgba(0, 0, 0, .75)</p>
+      </div>
+    </main>
+    <aside>
+      <h2>小记</h2>
+      <p>box-shadow</p>
+      <dl>
+        <dt>横向偏移</dt>
+        <dd>向元素的右边或左边投影，正值投向右边，负值投向左边</dd>
+        <dt>纵向偏移</dt>
+        <dd>向元素的上边或下边偏移，正值投向盒子的下边，负值投向盒子的上边</dd>
+        <dt>投影的半径</dt>
+        <dd>决定投影的模糊度和宽度，0表示不模糊，因此投影边缘清晰可见。值越大投影越模糊，也越宽。</dd>
+        <dt>inset</dt>
+        <dd>在盒子内部绘制阴影</dd>
+        <dt>阴影的尺寸</dt>
+        <dd>指的是阴影扩展的量。如果把尺寸指定为10px，浏览器会在每个方向上把阴影扩大10px</dd>
+        <dt>投影的颜色</dt>
+        <dd>可以使用rgba颜色，因为可以控制颜色的不透明度，能实现半透明效果</dd>
+      </dl>
+
+    </aside>
+  </body>
+</html>

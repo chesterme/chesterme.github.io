@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>行内、块级和其他显示方式</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html{
+        font-size: 10px;
+      }
+      .byline {
+        border: 2px solid #051938;
+        background-color: #466189;
+        padding: 10px;
+        margin: 20px;
+        font: 2em/1.5 Arial, Helvetica, sans-serif;
+      }
+      .byline strong {
+          display: inline-block;
+          padding: 20px;
+          margin: 10px;
+          border: 2px solid #07162e;
+          padding: 20px;
+          margin: 10px;
+          font-size: 3em;
+      }
+      li {
+        display: inline;
+      }
+      body {
+        background-color: rgb(247, 226, 155);
+      }
+      .main {
+        background-color: rgba(255, 255, 255, .75);
+        border: 4px dashed #2fc2d6;
+        border-radius: 20px;
+      }
+      .radius-1{
+        border: 4px dashed #2fc2d6;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        font: 3em/1.5 Arial, Helvetica, sans-serif;
+      }
+      .radius-2{
+        border: 4px dashed #2fc2d6;
+        border-radius: 0 30px 10px 5px;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        font: 3em/1.5 Arial, Helvetica, sans-serif;
+      }
+      .radius-3{
+        border: 4px dashed #2fc2d6;
+        border-radius: 50%/50%;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        font: 3em/1.5 Arial, Helvetica, sans-serif;
+      }
+      .radius-4{
+        border: 4px dashed #2fc2d6;
+        border-radius: 15% 15% 15% 15% / 15% 15% 15% 15%;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        font: 3em/1.5 Arial, Helvetica, sans-serif;
+      }
+      .radius-1{
+        border: 4px dashed #2fc2d6;
+        border-radius: 20px;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        font: 3em/1.5 Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+  		<h1><strong>CSS</strong> The Missing Manual</h1>
+  		<h2>Exploring Typographic Possibilities</h2>
+  		<p class="byline">november 30 <strong>Rod Dibble</strong></p>
+  		<ul>
+  			<li>Lorem Ipsum</li>
+  			<li>Reprehenderit qui in ea</li>
+  			<li>Lorem Ipsum</li>
+  			<li>Reprehenderit qui in ea</li>
+  			<li>Lorem Ipsum</li>
+  			<li>Reprehenderit qui in ea</li>
+  		</ul>
+  		<h3>Esse quam nulla</h3>
+  		<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <em>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</em> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+  		<h3>Quis autem vel eum</h3>
+  		<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <strong>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </strong>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+  	</div>
+    <p class="radius-1">Oder today</p>
+    <p class="radius-2">.. or tomorrow</p>
+    <p class="radius-3">... or whenever</p>
+    <p class="radius-4">... just order</p>
+    <aside>
+      <h2>小记</h2>
+      <p>
+        当涉及到内外边距时，浏览器会使用不同的方式处理行内盒子，可以为行内元素添加左右内外边距，但不可以使用上下内外边距增加行内元素的高度。
+      </p>
+      <p>
+        有时候，需要让行内元素表现的像块级元素，或者反过来。例如，无序列表的项目都是块级元素，在页面导航中需要把连接横向显示，这时候就需要改变
+        列表项默认的显示方式。使用display属性，就可以让块级元素表现得像行内元素或者反过来。甚至还能让元素既像块级元素，又像行内元素。
+      </p>
+    </aside>
+  </body>
+</html>

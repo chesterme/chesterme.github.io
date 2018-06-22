@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta lang="zh" charset="utf-8">
+    <title>创建导航栏</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      ul.nav {
+        list-style: none;
+        padding-left: 0;
+        margin-left: 0;
+      }
+      ul.nav a{
+        text-decoration: none;
+        width: 8em;
+        text-align: center;
+        border: 1px dashed #000;
+        border-radius: 4px;
+        height: 1.25em;
+        line-height: 1.25em;
+        background-color: #8dd0e9;
+        color: #333;
+        padding: 5px 15px 5px 15px;
+      }
+      ul.nav a:hover {
+        background-color: #21f8ef;
+      }
+      ul.nav a:active{
+        background-color: #21f8ac;
+      }
+      .inline ul.nav{
+        text-align: center; /* 导航栏居中显示 */
+      }
+      .block ul.nav a{
+        border-left: 5px solid #501a1a;
+        display: inline-block;
+      }
+      .inline ul.nav li{
+        display: inline;
+        margin-right: -5px;
+        /* margin-left: 5px; */
+      }
+
+      .float ul.nav{
+        overflow: hidden;
+      }
+      .float ul.nav li{
+        float: left;
+      }
+      .float ul.nav a{
+        display: block;
+        background-image: -webkit-linear-gradient(rgb(175, 175, 175), rgb(95, 95, 95));
+        background-image: -moz-linear-gradient(rgb(175, 175, 175), rgb(95, 95, 95));
+        background-image: -o-linear-gradient(rgb(175, 175, 175), rgb(95, 95, 95));
+        background-image: linear-gradient(rgb(175, 175, 175), rgb(95, 95, 95));
+      }
+      .float ul.nav a:hover{
+        background-image: -webkit-linear-gradient(rgb(200, 200, 200), rgb(80, 80, 80));
+        background-image: -moz-linear-gradient(rgb(200, 200, 200), rgb(80, 80, 80));
+        background-image: -o-linear-gradient(rgb(200, 200, 200), rgb(80, 80, 80));
+        background-image: linear-gradient(rgb(200, 200, 200), rgb(80, 80, 80));
+      }
+      .float ul.nav a:active{
+        background-image: -webkit-linear-gradient(rgb(220, 220, 220), rgb(50, 50, 50));
+        background-image: -moz-linear-gradient(rgb(220, 220, 220), rgb(50, 50, 50));
+        background-image: -o-linear-gradient(rgb(220, 220, 220), rgb(50, 50, 50));
+        background-image: linear-gradient(rgb(220, 220, 220), rgb(50, 50, 50));
+      }
+      .float + p{
+        clear: both;
+        margin-top: 5px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="block">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+      <nav class="inline">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+      <nav class="float">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+      <p>This is a paragraph.</p>
+    </header>
+  </body>
+</html>

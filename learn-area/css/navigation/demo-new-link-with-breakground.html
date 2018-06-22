@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>在链接中使用背景图</title>
+    <style>
+      /* a {
+        text-decoration: none;
+        background: url(./images/start.png) repeat-x left bottom;
+        padding-bottom: 5px;
+      }
+      a.button{
+        background: none;
+        border: solid 1px rgb(0,0,0);
+        background-color: #c76d6d;
+        margin: 10px 0;
+      } */
+      /* a.button {
+        background: #b1b1b1;
+        color: #fff;
+        font-weight: bold;
+        border-width: 4px;
+        border-style: solid;
+        border-top-color: #dfdfdf;
+        border-right-color: #666;
+        border-bottom-color: #333;
+        border-left-color: #858585;
+      } */
+      ul{
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        background-color: #ee432e;
+        background-image: -webkit-linear-gradient(to top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 10%);
+        background-image: -moz-linear-gradient(to top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 10%);
+        background-image: -o-linear-gradient(to top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 10%);
+        background-image: linear-gradient(to top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 10%);
+        border: 1px solid #951100;
+        border-radius: 5px;
+        box-shadow: inset 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+        padding: 12px 20px 14px 20px;
+        color: #fff;
+        font: bold 20px/1 "Helvetica Neue", Helvetica, arial, sans-serif;
+        text-align: center;
+        text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+        display: inline-block;
+        margin: 10px 0px;
+      }
+      .myButton {
+      	-moz-box-shadow:inset 0px 1px 10px 0px #ffffff;
+      	-webkit-box-shadow:inset 0px 1px 10px 0px #ffffff;
+      	box-shadow:inset 0px 1px 10px 0px #ffffff;
+      	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+      	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+      	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+      	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+      	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+      	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+      	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+      	background-color:#f9f9f9;
+      	-moz-border-radius:25px;
+      	-webkit-border-radius:25px;
+      	border-radius:25px;
+      	border:2px solid #dcdcdc;
+      	display:inline-block;
+      	cursor:pointer;
+      	color:#666666;
+      	font-family:Arial;
+      	font-size:15px;
+      	font-weight:bold;
+      	padding:9px 24px;
+      	text-decoration:none;
+      	text-shadow:0px 1px 4px #ffffff;
+      }
+    .myButton:hover {
+    	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+    	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+    	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+    	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+    	background-color:#e9e9e9;
+    }
+    .myButton:active {
+    	position:relative;
+    	top:1px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="www.baidu.com">baidu</a></li>
+          <li><a class="myButton" href="https://translate.google.cn">translate</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

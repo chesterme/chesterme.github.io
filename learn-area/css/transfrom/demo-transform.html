@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>变形：旋转，缩放，平移，倾斜</title>
+    <style>
+      img.special {
+        border: 1px solid #db2626;
+        border-top: 30px solid #f1941b;
+        padding: 5px;
+        margin: 100px 200px;
+        box-shadow: 4px 4px 8px 5px rgb(0, 0, 0, .75);
+      }
+      img.special:hover{
+        /* -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        transform: rotate(30deg); */
+        transform: scale(-1, 1);
+        /* transform-origin: left top; */
+      }
+      p {
+        background-color: #d69744;
+        /* transform: scale(2); */
+      }
+      figcaption {
+        background-color: #d69744;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      img:hover {
+        transform: rotate(-30deg) scale(2);
+      }
+      .button {
+        font: 3em Arial ,Helvetica, sans-serif;
+        border-radius: .5em;
+        background-color: rgb(34, 255, 23);
+        border: 1px solid rgba(0, 0, 0, .5);
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+        margin: 10px;
+        margin-left: 50px;
+      }
+      .button:hover {
+        -webkit-transform: scale(3);
+        -ms-transform: scale(3);
+        -moz-transform: scale(3);
+        padding: .5em;
+      }
+      .button:active {
+        -webkit-translate(1px, 2px);
+        -ms-translate(1px, 2px);
+        translate(1px, 2px);
+      }
+      p{
+        display: inline-block;
+      }
+      p:hover {
+        transform: skew(30deg, 0) scale(0.5);
+        /* transform: skew(0, 30deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HEAD</h1>
+    <p>This is a paragraph.</p>
+    <figure>
+      <img class="special"src="./images/animate01.jpg"/>
+      <figcaption>fig1: animate</figcaption>
+    </figure>
+    <nav>
+      <ul>
+        <li><a href="#"><img class="linkImg" src="./images/animate01-100w.jpg"/></a></li>
+        <li><a class="button" href="#">Home</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

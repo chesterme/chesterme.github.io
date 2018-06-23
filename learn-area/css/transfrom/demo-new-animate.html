@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="zh">
+    <title>简单的动画</title>
+    <style>
+      /* 淡出动画 */
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes blink {
+        from {
+          background-color: #eaeed3;
+          border: 1px solid #d8fd02;
+          padding: 2px;
+          margin: 2px;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+        }
+        to{
+          background-color: #d2d11e;
+          border: 1px solid #d8fd02;
+          padding: 2px;
+          margin: 2px;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+        }
+      }
+      @keyframes blink {
+        from {
+          background-color: #eaeed3;
+          border: 1px solid #d8fd02;
+          padding: 2px;
+          margin: 2px;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+        }
+        to{
+          background-color: #d2d11e;
+          border: 1px solid #d8fd02;
+          padding: 2px;
+          margin: 2px;
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+        }
+      }
+      @-webkit-keyframes growAndGlow {
+        from{
+          background-color: yellow;
+          animation-timing-function: cubic-bezier(1, .03, 1, .115);
+        }
+        50% {
+          transform: scale(1.5);
+          background-color: blue;
+          animation-timing-function: linear;
+        }
+        to {
+          transform: scale(3);
+          background-color: red;
+        }
+      }
+      /* 动画改变元素的背景颜色和大小 */
+      @keyframes growAndGlow {
+        from{
+          background-color: yellow;
+          animation-timing-function: cubic-bezier(1, .03, 1, .115);
+        }
+        50% {
+          transform: scale(1.5);
+          background-color: blue;
+          animation-timing-function: linear;
+        }
+        to {
+          transform: scale(3);
+          background-color: red;
+        }
+      }
+      /* 淡出 */
+      @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0 }
+      }
+      .announcement {
+        /* 应用淡出动画 */
+        /* -webkit-animation-name: fadeIn, blink;
+        -webkit-animation-duration: 1s, 2s;
+        animation-name: fadeIn, blink;
+        animation-duration: 1s, 2s; */
+
+        /* animation-name: growAndGlow;
+        animation-duration: .25s;
+        animation-delay: 1s;
+        animation-iteration-count: 3; */
+        /* 应用淡出动画，持续2s，显示两个，正序播放，然后倒序播放，最终元素的样式是动画的结果 */
+        animation-name: fadeOut;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        animation-fill-mode: forwards;
+      }
+      .announcement:hover {
+        animation-play-state: paused;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="announcement">
+      <h2>Announcement.</h2>
+      <p class="para">This is a paragraph</p>
+    </div>
+  </body>
+</html>

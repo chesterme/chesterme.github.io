@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="zh">
+    <title>简单的动画</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+      .navButton {
+        text-align: center;
+        text-decoration: none;
+        border: 1px dashed #f61119;
+        border-top: 5px solid orange;
+        border-right: none;
+        float: left;
+        background-color: 55c0b1;
+        padding: 2px;
+        transition-property: color, background-color, border-color;
+        transition-duration: .25s, .75s, 2s;
+        /* transition-timing-function: ease; */
+        transition-timing-function: cubic-bezier(.20, .96, .74, .07);
+      }
+      li:last-of-type a {
+        border-right: 1px dashed #f61119;
+      }
+      .navButton:hover{
+        color: #c5e31d;
+        background-color: #d4ee41;
+        border-color: #000;
+      }
+      .para {
+        border: 1px solid #f61119;
+        padding: 2px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#" class="navButton">Home</a></li>
+        <li><a href="#" class="navButton">About</a></li>
+        <li><a href="#" class="navButton">Live</a></li>
+        <li><a href="#" class="navButton">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="para">This is a paragraph</p>
+  </body>
+</html>

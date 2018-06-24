@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="zh">
+    <title>装饰表格</title>
+    <style>
+      /* 为各单元格添加内边距 */
+      td, th {
+        padding: 10px;
+        /* 单元格内容纵向居中对齐，该属性不能被继承，所以只能应用到单元格中 */
+        vertical-align: center;
+      }
+      td {
+        padding: 10px 5px 3px 5px;
+      }
+      /* 调整纵向和横向对齐方式 */
+      table {
+        /* 单元格内容横向两边对齐， 该属性可以被继承，所以在table元素中设置之后，它的每一个单元格都会继承该属性*/
+        text-align: justify;
+      }
+      /* 创建边框 */
+      table {
+        /* 只会为整个表格添加边框，不会为单元格添加边框 */
+        border: 1px solid #000;
+        /* 设置每个单元格之间的间隙，默认情况下，浏览器会添加几个像素的间隙 */
+        border-spacing: 0;
+        /* 去掉重叠的边框 */
+        border-collapse: collapse;
+        /* 隐藏单元格 */
+        /* empty-cells: hide; */
+      }
+      td, th {
+        /* 每一个单元格都有边框，但是它们之间有明显的间隙 */
+        border: 1px solid #000;
+        /* 为边框添加圆角，当设置边框折叠时，浏览器将忽略圆角，直接绘制直角 */
+        /* border-radius: 5px; */
+        /* 添加投影 */
+        box-shadow:inset 0 0 2px rgba(32, 32, 32, .5);
+      }
+      /* 装饰行和列 */
+      tr:nth-of-type(1n+1) {
+        background-color: #f56510;
+      }
+      tr:nth-of-type(2n+1) {
+        background-color: #fff;
+      }
+      .price {
+        /* 改变某列的宽度 */
+        width: 200px;
+        /* 改变某列的背景色 */
+        background-color: #af6e49;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption align="bottom">Table 1: CosmoFaarmer.com's Indoor Mower Roundup</caption>
+      <colgroup>
+        <col class="brand"/>
+        <col class="price"/>
+        <col class="power"/>
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">Brand</th>
+          <th scope="col">Price</th>
+          <th scope="col">Power Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chinook Push-o-matic Indoor Mower</td>
+          <td>$247.00</td>
+          <td>Mechanical</td>
+        </tr>
+        <tr>
+          <td>Sampson Deluxe Apartment Mower</td>
+          <td>$370.00</td>
+          <td>Mechanical</td>
+        </tr>
+        <tr>
+          <td>Sampson Deluxe Apartment Mower</td>
+          <td>$370.00</td>
+          <td>Mechanical</td>
+        </tr>
+        <tr>
+          <td>Sampson Deluxe Apartment Mower</td>
+          <td>$370.00</td>
+          <td>Mechanical</td>
+        </tr>
+        <tr>
+          <td>Sampson Deluxe Apartment Mower</td>
+          <td>$370.00</td>
+          <td>Mechanical</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

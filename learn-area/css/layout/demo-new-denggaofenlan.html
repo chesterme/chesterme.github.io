@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta lang="zh" charset="utf-8">
+    <title>创建等高分栏</title>
+    <style>
+      body {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 960px;
+        font-size: 16px;
+      }
+      h1 {
+        font: 2em Arial, Helvetica, sans-serif;
+        border-bottom: 1px dashed #000;
+      }
+      h2 {
+        font: 1.5em Verdana, Geneva, Helvetica, sans-serif;
+        border-bottom: 1px dashed #000;
+      }
+      p {
+        font: 1em "Times New Roman", Times, serif;
+      }
+      .sidebar1 {
+        float: left;
+        width: 20%;
+        padding: 2px;
+        margin: 4px 5px;
+        border: 1px solid #000;
+      }
+      .sidebar2 {
+        float: right;
+        width: 20%;
+        padding: 2px;
+        margin: 4px 5px;
+        border: 1px solid #000;
+      }
+      .main {
+        padding: 2px;
+        margin: 4px 0px;
+        border: 1px solid #000;
+        overflow: hidden;
+      }
+      .info img {
+        float: left;
+        padding: 0px 2px;
+        margin: 5px;
+      }
+      .info p {
+        overflow: hidden;
+      }
+      .info h2 {
+        margin: 4px 0px;
+        overflow: hidden;
+      }
+      .wrapper1 {
+        background: url("./images/bg_page1.png") repeat-y left top;
+      }
+      .wrapper2 {
+        background: url("./images/bg_page1.png") repeat-y right top;
+        /* background-image: linear-gradient(to left, red 0%, red 20%, white 20%, white 80%, blue 80%, blue 100%); */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>创建全高型分栏</h1>
+    <div class="wrapper1">
+      <div class="wrapper2">
+        <div class="sidebar1">
+          <h2>Sidebar content here.</h2>
+          <p>This is a paragraph.</p>
+        </div>
+        <div class="sidebar2">
+          <h2>Sidebar content here.</h2>
+          <p>This is a paragraph.</p>
+        </div>
+        <div class="main">
+          <h2>Main content here.</h2>
+          <p>This is a paragraph.</p>
+          <div class="info">
+            <img src="./images/animate01-100w.jpg">
+            <h2>The Latest Addition</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer.
+            </p>
+            <br class="clear"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

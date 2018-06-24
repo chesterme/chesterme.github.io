@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+    <meta lang="zh" charset="utf-8">
+    <title>浮动问题</title>
+    <style>
+      body {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 960px;
+        font-size: 16px;
+      }
+      article {
+        border: 1px solid #000;
+        padding: 4px;
+        background-color: #f19e6e;
+        /* 法3： 强制外层容器扩大，以包含浮动元素 */
+        /* overflow: hidden; */
+      }
+      h1 {
+        font: 2em Arial, Helvetica, sans-serif;
+        border-bottom: 1px dashed #000;
+      }
+      h2 {
+        font: 1.5em Verdana, Geneva, Helvetica, sans-serif;
+        border-bottom: 1px dashed #000;
+      }
+      p {
+        font: 1em "Times New Roman", Times, serif;
+      }
+      .main h1 {
+        padding-left: 10px;
+        margin: 5px 10px 5px 10px;
+      }
+      .main h2 {
+        margin: 5px;
+      }
+      .tips {
+        float : left;
+        width: 40%;
+        padding: 10px 20px;
+      }
+
+      br.clear {
+        /* 法1：在包含浮动元素的容器里添加一个标签，在该标签上清除浮动 */
+        /* clear:both; */
+      }
+      .main {
+        /* 法2：使用一个外层容器包含所有的浮动元素和被浮动元素，然后再让这个容器横向浮动，最后在容器的下一个元素中清除浮动 */
+        /* float: left; */
+      }
+      /* 法4： Micro Clearfix*/
+      .main::after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+      .info {
+        /* 法2： */
+        /* clear: both; */
+        padding: 5px;
+        border: 1px solid #000;
+        background-color: #f19e6e;
+        margin: 5px 0px;
+      }
+      .info img {
+        float: left;
+      }
+      .info p {
+        font: .75em "Hoefler Text", "Palatino Linotype", Times, serif;
+        overflow: hidden;
+      }
+      .info h2 {
+        padding: 5px;
+        margin: 5px;
+      }
+      .info p {
+        padding: 5px;
+        margin: 5px;
+      }
+      .info {
+        /* float: left;
+        width: 100%; */
+        /* overflow: hidden; */
+      }
+      /* .info::after {
+        content: " ";
+        display: table;
+        clear: both;
+      } */
+      /* 多栏布局 */
+      .multicol {
+        column-count: 3;
+        column-gap: 1em;
+        column-rule: 1px dotted black;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="main">
+      <h1>Bathtub Hydroponics Tips</h1>
+      <div class="tips">
+        <h2>Watch the Water Level</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consetuer adipiscing elit, sed diam nonummy nibh esuismod tincidunt ut laoreet doore magna aliquam erat volutpat.
+            Ut wisi enum ad minim veniam, quis nostrud exerci tation ullamcorper suscipt lobortis nisl ut aliquip ex ea commodo consquat. Duis autem vel eum iriure d.
+        </p>
+      </div>
+      <div class="tips">
+        <h2>Cast-Iron No-Nos</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed duam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enum ad
+          minim veniam, quis nostrud exerci tatio.
+        </p>
+      </div>
+      <br class="clear"/>
+    </article>
+    <div class="info">
+      <img src="./images/animate01-100w.jpg">
+      <h2>The Latest Addition</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer.
+      </p>
+      <br class="clear"/>
+    </div>
+    <div class="info">
+      <img src="./images/animate02-100w.jpg">
+      <h2>Fruity Nutty Flavor</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer.
+      </p>
+      <br class="clear"/>
+    </div>
+    <div class="info">
+      <img src="./images/animate03-100w.jpg">
+      <h2>Lettuce Rejoice</h2>
+      <p>
+        <br class="clear"/>
+      </p>
+      <br class="clear"/>
+    </div>
+    <div class="multicol">
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+    </div>
+  </body>
+</html>

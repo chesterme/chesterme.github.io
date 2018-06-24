@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="zh">
+    <title>装饰表单</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 20em;
+        vertical-align: top;
+        text-align: right;
+        margin-right: 15px;
+        background-color: #e17636;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <p>
+  			<fieldset>
+  				<legend>Title<abbr title="This field is mandatory">*</abbr></legend>
+  				<input type="radio" name="title" required id="r1" value="Mr"><label for="r1">Mr.</label>
+  				<input type="radio" name="title" required id="r2" value="Ms"><label for="r2">Ms.</label>
+  			</fieldset>
+  		</p>
+  		<p>
+  			<label for="n1">How old are you?</label>
+  			<input type="number" name="age" min="12" max="120" step="1" id="n1" pattern="\d+">
+  		</p>
+  		<p>
+  			<label for="t1">What's your favorite fruit?<abbr title="This field is mandatory">*</abbr></label>
+  			<input type="text" name="fruit" id="t1" list="l1" required pattern="[Bb]anan|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+  			<datalist id="l1">
+  		      <option>Banana</option>
+  		      <option>Cherry</option>
+  		      <option>Apple</option>
+  		      <option>Strawberry</option>
+  		      <option>Lemon</option>
+  		      <option>Orange</option>
+  			</datalist>
+  		</p>
+  		<p>
+  			<label for="t2">What's your e-mail?</label>
+  			<input type="email" name="email" id="t2">
+  		</p>
+  		<p>
+  			<label for="t3">Leave a short message</label>
+  			<textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+  		</p>
+  		<p>
+  			<button>submit</button>
+  		</p>
+    </form>
+  </body>
+</html>

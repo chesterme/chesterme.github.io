@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+  <head>
+    <meta lang="zh" charset="utf-8">
+    <title>定位属性的原理</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+      p {
+        font: 1em/1.5 "Times New Roman", Times, serif;
+        border-radius: 5px;
+        border: 1px solid #000;
+        padding: 2px;
+        color: #000;
+        display: inline-block;
+        box-shadow: inset 0 0 3px rgba(96, 39, 5, .7);
+        background-image: linear-gradient(to bottom, #3d3733, #da5609);
+      }
+      /* .asolute {
+        position: absolute;
+        left: 44px;
+        top: 55px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        padding: 2px;
+        display: inline-block;
+      } */
+      .asolute {
+        position: absolute;
+        left: 5em;
+        top: 6em;
+        border: 1px solid #000;
+        padding: 2px;
+      }
+      .asolute p {
+        display: block;
+        margin:2px;
+        overflow: hidden;
+      }
+      .inner {
+        /* position: absolute;
+        bottom: 0px;
+        right: 5px; */
+        border: 1px solid #000;
+        float: right;
+        width: 50%;
+      }
+      /* br.clear {
+        clear: both;
+      } */
+      /* .cover {
+        float: right;
+      }
+      p.clear {
+        clear:both;
+      } */
+
+      /* 指定参照物 */
+      .relative h1 {
+        position: relative;
+        border: 1px solid #000;
+        left: 4em;
+        top: 1em;
+      }
+      /* 参照h1进行定位 */
+      .relative h1 img {
+        position: absolute;
+        top: 2em;
+        right: 0;
+      }
+      .relative {
+        position: absolute;
+        top: 20em;
+        left: 3em;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="static">
+      <p>static</p>
+    </div>
+    <div class="asolute">
+      <p>Absolute postion &lt;div&gt;</p>
+      <div class="cover">
+        <div class="inner">
+          <p>This div si position</p>
+          <p>Bottom: 0em</p>
+          <p>Right: 5em</p>
+          <p>内层元素的绝对定位是相对父元素的位置</p>
+          <!-- <br class="clear"/> -->
+        </div>
+      </div>
+      <p class="clear">Top: 5em</p>
+      <p>Left: 5em</p>
+    </div>
+    <div class="relative">
+      <h1>Relative position <img src="./images/animate01-100w.jpg"/></h1>
+    </div>
+  </body>
+</html>

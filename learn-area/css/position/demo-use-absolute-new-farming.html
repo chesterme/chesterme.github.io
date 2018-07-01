@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="zh">
+    <title>使用固定定位创建框架</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        border: 1px solid #000;
+      }
+      .banner {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+      .sidebar {
+        position: fixed;
+        left: 0;
+        top: 110px;
+        width: 175px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .main {
+        margin-left: 190px;
+        margin-top: 110px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>CosmoFarmer 2.0</h1>
+      <p>Your online guide to apartment farming</p>
+    </div>
+    <div class="main">
+      <article>
+        <h2>Rubber Duckies Needn't Apply</h2>
+        <p>Something details</p>
+      </article>
+      <article>
+        <h2>Cast-Iron No-Nos</h2>
+        <p>Something details</p>
+      </article>
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li>HOME</li>
+        <li>FEATURES</li>
+        <li>EXPERTS</li>
+        <li>QUIZ</li>
+        <li>PROJECTS</li>
+        <li>HOROSCOPES</li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p>Copyright 2006, ConsmofFammer.com</p>
+    </div>
+  </body>
+</html>

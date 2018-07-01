@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="zh">
+    <title>在元素内部定位</title>
+    <style>
+      h1 {
+        position: relative;
+        border-bottom: 1px dashed #999;
+      }
+      h1 .date {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: .5em;
+        background-color: #e9e9e9;
+        color: black;
+        padding: 2px 7px 0 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><span class="date">Nov. 10, 2006</span> CosmoFarmer Bought By Google</h1>
+  </body>
+</html>

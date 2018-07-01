@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta lang="zh" charset="utf-8">
+    <title>隐藏页面中的部分内容并显示</title>
+    <style>
+      .animate {
+        position: relative;
+        border: 1px solid #000;
+        padding: 2px;
+        width: 100px;
+        height: 100px;
+      }
+      .animate figcaption {
+        /* 法1：将display属性设置为none，元素完全从页面中消失 */
+        /* display: none; */
+        /* 法2：将visibility属性设置为hidden，浏览器只是不显示元素，但是元素原本的位置会留空 */
+        /* visibility: hidden; */
+        /* 法3：将opacity属性设置为0，浏览器能以动画形式显示这个属性的变化 */
+        opacity: 0;
+        transition: opacity .5s ease-in;
+
+        position: absolute;
+        bottom: 0
+        left: 0;
+        right: 0;
+        background-color: white;
+      }
+      .animate:hover figcaption {
+        /* 法1 */
+        /* display: block; */
+        /* 法2 */
+        /* visibility: visible; */
+        /* 法3 */
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <figure class="animate">
+      <img src="./images/animate01-100w.jpg">
+      <figcaption>A picture of a animate.</figcaption>
+    </figure>
+  </body>
+</html>

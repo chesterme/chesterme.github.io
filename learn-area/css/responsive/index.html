@@ -2,71 +2,75 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>The Hat Gallery</title>
+<meta name="viewport" content="width=device-width">
+<title>CSS: The Missing Manual</title>
 <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-	<header>
-	<h1>The Hat Gallery <img src="images/hat.png" width="130" height="140" alt="The Hat Gallery" class="badge"></h1>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">More Hats</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Visit Us</a></li>
-		</ul>
-	</nav>
-	</header>
-	<div class="gallery">
-		<figure>
-		<img src="images/file00079963469.jpg" width="300" height="210" alt="Panama Hat">
-		<figcaption><strong>Nam libero tempore.</strong> Soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</figcaption>
-		</figure>
+  <div class="pageWrapper">
+  <header>
+    <nav class="clear">
+    <ul>
+      <li><a href="#">About The Book</a></li>
+      <li><a href="#">CSS Properties</a></li>
+      <li><a href="#">CSS Tips</a></li>
+      <li><a href="#">CSS Gotchas</a></li>
+      <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <h1>CSS: The Missing Manual</h1>
+  </header>
 
-		<figure>
-		<img src="images/file000308999292.jpg" width="300" height="210" alt="Bonnet">
-		<figcaption><strong>Nam libero tempore.</strong> Soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</figcaption>
-		</figure>
+  <div class="contentWrapper">
+    <div class="columnWrapper">
+      <!-- main content goes here -->
+      <article class="main">
+        <h2>Article Title</h2>
+        <p><img src="images/clouds.jpg" alt="Clouds" class="half right">Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor. Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum.</p>
+        <p>Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor. </p>
+        <p>Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor. Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. </p>
+        <h3><img src="images/jellyfish.jpg" alt="Jellyfish" class="half left">Subheading</h3>
+        <p>Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor. Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. </p>
+        <h3>Subheading</h3>
+        <p>Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor. Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor. Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor. Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tor</p>
+      </article>
 
-		<figure>
-		<img src="images/file000330568599.jpg" width="300" height="210" alt="Pink hat">
-		<figcaption><strong>Nam libero tempore.</strong> Soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</figcaption>
-		</figure>
+      <!-- first sidebar goes here -->
+      <aside class="sidebar1">
+        <h2>Sidebar 1</h2>
+        <p>Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor.  </p>
+        <p><img src="images/gator.jpg" alt="Gator"></p>
+        <h3>Secondary Header</h3>
+        <p>Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum.  </p>
+        <h3>Secondary Header</h3>
+        <p>Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. </p>
+      </aside>
+    </div>
 
-		<figure>
-		<img src="images/file000550955311.jpg" width="300" height="210" alt="Variety">
-		<figcaption><strong>Nam libero tempore.</strong> Soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</figcaption>
-		</figure>
+    <!-- second sidebar goes here -->
+    <aside class="sidebar2">
+    <h2>Sidebar 2 </h2>
+      <ul>
+        <li>Aenean orci ante</li>
+        <li>Venenatis non adipiscing vita</li>
+        <li> Fringilla et neque</li>
+        <li>Aenean orci ante</li>
+        <li>Venenatis non adipiscing vita</li>
+        <li> Fringilla et neque</li>
+      </ul>
+      <p>Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor.Suspendisse vitae quam lorem, in tempus velit. </p>
+      <p><img src="images/mule.jpg" alt="Mule"></p>
+      <p>Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor.Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor.</p>
+    </aside>
+  </div>
 
-		<figure>
-		<img src="images/file0001117960982.jpg" width="300" height="210" alt="Hat">
-		<figcaption><strong>Nam libero tempore.</strong> Soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</figcaption>
-		</figure>
+  <footer>
+  <p>Copyright 2015, Greek Text Generator, Inc.
+  Suspendisse vitae quam lorem, in tempus velit. Sed vitae ante quis felis fringilla condimentum. Aenean orci ante, venenatis non adipiscing vitae, fringilla et neque. In pharetra, eros imperdiet luctus imperdiet, nunc sem pharetra mi, vel faucibus elit risus id tortor.</p>
+  <p>Contact: <a href="mailto:nobody@nowhere.com">e-mail@here.com</a></p>
+  </footer>
 
-		<figure>
-		<img src="images/file0001425538258.jpg" width="300" height="210" alt="Another bonnet">
-		<figcaption><strong>Nam libero tempore.</strong> Soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</figcaption>
-		</figure>
-
-		<figure>
-		<img src="images/file00030009680.jpg" width="300" height="210" alt="Dude with hat">
-		<figcaption><strong>Nam libero tempore.</strong> Soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</figcaption>
-		</figure>
-
-		<figure>
-		<img src="images/file0001728857809.jpg" width="300" height="210" alt="Cool hat">
-		<figcaption><strong>Nam libero tempore.</strong> Soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</figcaption>
-		</figure>
-
-		<figure>
-		<img src="images/file0001757413591.jpg" width="300" height="210" alt="Top Hats">
-		<figcaption><strong>Nam libero tempore.</strong> Soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus</figcaption>
-		</figure>
-	</div>
-	<footer>
-		<div class="copyright">
-		<p>Copyright 2015, The Hat Gallery</p>
-		</div>
-	</footer>
+  </div>
 </body>
 </html>

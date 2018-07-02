@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta lang="zh" charset="utf-8">
+    <title>创建流式布局</title>
+    <style>
+      div {
+        border: 1px solid #000;
+      }
+      .columns {
+        width: auto;
+        max-width: 1200px;
+        /* overflow : hidden; */
+      }
+      /* 清除浮动，在类名为columns的元素之后添加内容 */
+      .columns::after{
+         content: "";
+         display: block;
+         clear: both;
+      }
+
+      .one-third {
+        float: left;
+        width: 33%;
+      }
+      .two-thirds {
+        float: left;
+        width: 76%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="columns">
+      <div class="one-third">
+          <p>This is a paragraph.</p>
+      </div>
+      <div class="two-thirds">
+          <p>This is a paragraph.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+1. <meta name = "viewport" content = "width=device-width, initial-scale=1.0">， 这段代码有什么用？
+  meta标签用于为页面的内容提供额外的信息，还能给浏览器下达额外的指令，说明如何显示页面。
+  viewport：指代浏览器的显示内容，内容在不同的设备中会有不同的显示效果，在小屏幕的手机上页面内容会变得更小。这个标签有助于在不同设备中，控制如何显示页面内容。
+  width=device-width：将页面宽度设置为设备屏幕宽度
+  initial-0：(sets the initial zoom level of the webpage when it's loaded.) 当页面被加载时，初始化缩放级别。

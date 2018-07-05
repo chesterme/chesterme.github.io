@@ -1,0 +1,85 @@
+/* 装饰导航栏 */
+.nav, .boxes, .footer {
+  display: -webkit-flex;
+  /* 为这几个div应用弹性容器 */
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  /* 让容器里的项目显示成一行，并且允许换行 */
+  flex-flow: row wrap;
+}
+.nav {
+  /* 在容器里均匀分布各个弹性项目 */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.nav a {
+  /* 让各个链接占据弹性容器宽度的23%，当容器收窄时，按钮会随之变窄 */
+  width: 23%;
+}
+/* end 装饰导航栏 */
+/* 添加三栏 */
+.boxes div {
+  -webkit-flex: 1 1 250px;
+  flex: 1 1 250px;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px 10px 0 10px;
+  background-color: rgba(0, 0, 0, .1);
+  /* 将div标签设置成弹性容器，并且弹性项目的流向是column，即纵向叠放里面的段落和按钮 */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flew-flow: column;
+  flex-flow: column;
+}
+.boxes .more {
+  /* 对弹性项目来说，可以把各个按钮的上外边距设置为auto，迫使按钮显示在弹性容器的底部。 */
+  margin-top: auto;
+}
+/* end 添加三栏 */
+
+/* 装饰页脚*/
+.footer .copyright {
+  /* 将版权声明区域的宽度设置为注册表宽度的约两倍，并且添加一些右边距，让注册表离版权声明远一点 */
+  -webkit-flex: 2 1 500px;
+  flex: 2 1 500px;
+  margin-right: 30px;
+}
+.footer .signup {
+  -webkit-flex: 1 1 250px;
+  flex: 1 1 250px;
+}
+.nav, .boxes, .footer, .footer form {
+  /* 将form标签变成弹性容器，从而，表单里的标注、文字字段变成了弹性项目 */
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.signup label {
+  /* 让标注填满整列 */
+  width: 100%;
+}
+.signup input[type="email"] {
+  border-radius: 4px 0 0 4px;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.signup input[type="submit"] {
+  border-radius: 0 4px 4px 0;
+  padding: 0 10px;
+}
+/* end 装饰页脚 */
+/* 修改导航栏在移动设备中的布局 */
+@media (max-width: 500px) {
+  .nav {
+    /* 改变弹性项目的流向，现在，导航按钮不会并排显示，而是纵向排成一列 */
+    -webkit-flex-flow: column;
+    flex-flow: column;
+  }
+  .nav a {
+    /* 迫使各个链接占满整个弹性容器的宽度，另外，在各个链接下面添加一点空白，从视觉上把链接隔开 */
+    width: 100%;
+    margin-bottom: 2px;
+  }
+}
+/* end 修改导航栏在移动设备中的布局 */

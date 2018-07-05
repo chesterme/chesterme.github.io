@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>使用弹性盒子</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .content {
+        display: -webkit-flex;
+        display: flex;
+      }
+      .sidebar1 {
+        -webkit-order: -1;
+        order: -1;
+      }
+      /* .main {
+        -webkit-order: 2;
+        order: 2;
+      }
+      .sidebar2 {
+        -webkit-order:3;
+        order: 3;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="main">
+        <h2>A flex item</h2>
+        <p>Mei te possit instructior, idque delenit qui et, dicit ludus commune vix ad. Ea modo dicam cetero mel, case disputationi at est. Ad nam adipisci dignissim posidonium, eius reque temporibus ne mea. Vero antiopam ea vim. Ei timeam electram vix. Eam at tollit erroribus, ea eum idque legere epicuri. Sed quot legere minimum cu, ex mei fastidii mandamus intellegam, error consul ut per.</p>
+      </div>
+      <div class="sidebar1">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="sidebar2">
+        <p>This is a paragraph</p>
+      </div>
+    </div>
+  </body>
+</html>
